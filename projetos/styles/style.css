@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.container{
+    background-image: url(../../assets/img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 70px;
+    padding: 70px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.box-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.arrow{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.back{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.next{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+
+.back:hover{
+    color: #37a2db;
+}
+
+.title{
+    display: flex;
+    font-size: 1.6rem;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.link{
+    text-decoration: none;
+    padding-bottom: 10px;
+    position: relative;
+    font-size: 2rem;
+    line-height: 1em;
+    letter-spacing: 2px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.link::before{
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 0.7s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+.link:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr))
+}
+
+.box-item{
+    list-style: none;
+    margin: 30px;
+}
+
+.link-github{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.link-github:hover{
+    color: #37a2db
+}
+
+.i-git{
+    font-size: 1.3rem;
+}
+
+
+@media screen and (max-width: 550px){
+    .box{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .box{
+        padding: 40px;
+    }
+    .title{
+        font-size: 1.3rem;
+    }
+    .link{
+        font-size: 1.5rem;
+    }
+}

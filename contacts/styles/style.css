@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-image: url(../../assets/img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 120px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.a-back{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    top: 30px;
+    left: 30px;
+    font-size: 1.2rem;
+}
+
+.a-back:hover{
+    color: #37a2db;
+}
+
+.back{
+    position: absolute;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.4rem;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contacts{
+    display: flex;
+    column-gap: 25px;
+    justify-content: center;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+    border-radius: 50%;
+    outline: 2px solid white;
+    transition-property: outline-offset,
+    outline-color, background-color;
+    transition-duration: .25s;
+}
+
+.icon:hover{
+    outline-offset: 4px;
+}
+
+.icon:hover i{
+    animation: shake .25s;
+}
+
+.icon-instagram:hover{
+    background-image: 
+    radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%, #fdf497 5%,
+    #fd5949 45%, #d6249f 60%,
+    #285AEB 90%);
+    outline-color: #a02d76;
+}
+
+.icon-gmail:hover{
+    background-image: 
+    radial-gradient(
+    circle at 30% 107%,
+    #F4B400 30%,
+    #0F9D58 70%,
+    #4285F4 80%);
+    outline-color: #fd5949;
+}
+
+.icon-twitter:hover{
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+}
+
+.icon-linkedin:hover{
+    background-color: #0077b5;
+    outline-color: #0077b5;
+}
+
+.icon-github:hover{
+    background-color: #2ea44f;
+    outline-color: #2ea44f;
+}
+
+@keyframes shake{
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}
+
+@media screen and (max-width: 600px) {
+    .box{
+        padding: 90px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .box{
+        padding: 50px;
+    }
+    .title{
+        font-size: 1.2rem;
+    }
+    .icon{
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}

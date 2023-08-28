@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: #123;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    width: 100vw;
+}
+
+.navWhite{
+    color: black !important;
+    background-color: rgb(56, 142, 223) !important;
+}
+
+.titleNav{
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #234;
+}
+
+.divDarkWeb{
+    background-color: #234;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 50%;
+}
+.divDarkWeb:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+.lang{
+    position: relative;
+    box-shadow: 0 0 0 0;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #234;
+    color: white;
+    border-radius: 5px;
+}
+
+.lang:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+.langItem{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 0.85rem;
+    background-color: #234;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.langItem:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.langItemHide{
+    display: none !important;
+}
+
+.container{
+    background-image: url(../../assets/img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 100px;
+    border-radius: 30px;
+}
+
+.boxWhite{
+    background-color: rgba(224, 236, 255, 0.8) !important;
+}
+
+.link{
+    text-decoration: none;
+    position: relative;
+    font-size: 3rem;
+    line-height: 1em;
+    letter-spacing: 2px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.linkWhite{
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+.link::before{
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 0.7s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+.link:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr))
+}
+
+.box-item{
+    list-style: none;
+    margin: 30px;
+}
+
+.divDarkWebHide{
+    display: none !important;
+}
+
+.divWhiteWebHide{
+    display: none !important;
+}
+
+.divWhiteWeb{
+    background-color: #234;
+    color: yellow;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 50%;
+}
+
+.divWhiteWeb:hover{
+    background-color: white;
+    color: #123;
+    transition: 0.4s;
+}
+
+@media screen and (min-width: 1280px){
+    .link{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .box{
+        width: 100%;
+        padding: 80px;
+        border-radius: 25px;
+    }
+    .link{
+        font-size: 2.5remrem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .link{
+        font-size: 2rem;
+    }
+    .box{
+        padding: 50px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .link{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-height: 525px){
+    .link{
+        font-size: 2rem;
+    }
+}

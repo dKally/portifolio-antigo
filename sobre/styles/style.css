@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-image: url(../../assets/img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 80px;
+    border-radius: 30px;
+    width: 70%;
+}
+
+.a-back{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    top: 30px;
+    left: 30px;
+    font-size: 1.2rem;
+}
+
+.a-back:hover{
+    color: #37a2db;
+}
+
+.back{
+    position: absolute;
+}
+
+.text{
+    color: white;
+    margin-bottom: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.div-course{
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    margin: 30px;
+}
+
+.link-course{
+    border: 1px solid white;
+    padding: 7px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.title-links{
+    color: white;
+    justify-content: center;
+    margin: 20px;
+}
+
+.links{
+    border: 1px solid white;
+    padding: 7px;
+    margin: 20px;
+    border-radius: 5px;
+    gap: 40px;
+}
+
+.link1:hover{
+    color:#37a2db;
+    border: 1px solid #37a2db;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1280px){
+    .box{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .box{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .container{
+        height: 100%;
+        width: 100%;
+    }
+    .links{
+        display: block;
+    }
+    .line{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 500px){
+    .box{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
